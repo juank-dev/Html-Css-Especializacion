@@ -1,0 +1,362 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    border: thin solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;     
+}
+
+.box-shadow {
+   /* box-shadow: mov-x mov-y radius-blur spread-blur color; */
+   box-shadow: -1rem -1rem 1rem 1rem #00000020;
+   text-align: center;
+
+   /* text-shadow: mov-x mov-y blur-radius color */
+   text-shadow: 1rem 1rem 0.2rem #00ff00;
+   
+}
+
+.box-shadow:hover {
+    /* box-shadow: mov-x mov-y radius-blur spread-blur color; */
+    box-shadow: -1rem -1rem 1rem 1rem #d8030350 inset;
+ }
+
+ .box-shadow-multiple {
+    box-shadow: -1rem -1rem 1rem 1rem #0000ff50, -1rem -1rem 1rem 1rem #d8030350 inset, 2rem 2rem 2rem 2rem #ffff0050;
+    text-align: center;
+    font-size: 1.2rem;
+    text-shadow: 1rem 1rem 0.2rem #00ff00, -1rem -1rem 0.3rem #ffff00;
+ }
+
+ .box-drop-shadow {
+    /* filter: drop-shadow(mox-x mov-y blur-radius c); */
+    filter: drop-shadow(1rem 1rem 0.3rem red);
+ }
+
+ .box-drop-shadow img {
+     max-width: 100%;
+     filter: drop-shadow(1rem 1rem 0.3rem orange);
+ }
+
+ /* DEGRADE */
+
+ .lineal-gradient {
+    background-image: linear-gradient(red, green);
+    background-image: linear-gradient(red, green, blue);
+    background-image: linear-gradient(0deg, red, green, blue);
+    background-image: linear-gradient(45deg, red, green, blue);
+    
+    background-image: linear-gradient(0deg, red 20%, green 21% 60%, blue 61%);
+    
+    background-image: linear-gradient(to right, red, green, blue);
+    background-image: linear-gradient(to top, red, green, blue);
+    background-image: linear-gradient(to bottom, red, green, blue);
+    background-image: linear-gradient(to bottom right, red, green, blue);
+ }
+
+ .lineal-gradient:hover {
+    
+    background-image: linear-gradient(45deg, yellow, orange, red);
+ }
+
+ .radial-gradient {
+    background-image: radial-gradient(white, red);
+    background-image: radial-gradient(white, red, yellow);
+    background-image: radial-gradient(circle 4rem, white, red, yellow);
+    background-image: radial-gradient(circle 4rem, white 30%, red 80%, yellow);
+    background-image: radial-gradient(circle 100px, white 30%, red 60%, yellow 90%);
+    background-image: radial-gradient(circle 100px at top, white 30%, red 60%, yellow 90%);
+    background-image: radial-gradient(circle 100px at bottom right, white 30%, red 60%, yellow 90%);
+    
+    background-image: radial-gradient(ellipse 5rem 3rem, white, red, yellow);
+    
+ }
+
+ .radial-gradient:hover {
+    background-image: radial-gradient(circle 80px,red 50%, white 50%);
+ }
+
+
+
+ .conic {
+    background-image: conic-gradient(blue,  red);
+    background-image: conic-gradient(blue,  red, yellow);
+     background-image: conic-gradient(blue 0% 50%,  red 60%, yellow 80%);
+     background-image: conic-gradient(blue 0deg 90deg,  red 145deg 200deg, green 230deg 280deg, yellow 320deg);
+     background-image: conic-gradient(from 90deg, blue 0deg 90deg,  red 145deg 200deg, green 230deg 280deg, yellow 320deg);
+ }
+
+ .conic:hover {
+    background-image: conic-gradient(from 90deg,red 0deg 120deg,  white 120deg 240deg, blue 240deg);
+ }
+
+ .repeat-lineal-gradient {
+     background-image: repeating-linear-gradient(red 0 10px, green 10px 20px, blue 20px 30px);
+     background-image: repeating-linear-gradient(90deg, red 0 10px, green 10px 20px, blue 20px 30px);
+     background-image: repeating-linear-gradient(45deg, red 0 10px, green 10px 20px, blue 20px 30px);
+ }
+
+ .repeat-lineal-gradient:hover {
+    background-image: repeating-linear-gradient(45deg, blue 0 10px, red 10px 20px, green 20px 30px);
+}
+
+ .repeat-radial-gradient {
+     background-image: repeating-radial-gradient(red 0 10px, green 10px 20px, blue 20px 30px);
+ }
+ .repeat-radial-gradient:hover {
+    background-image: repeating-radial-gradient(blue 0 10px, red 10px 20px, green 20px 30px);
+}
+
+ .repeat-conic {
+     background-image: repeating-conic-gradient(red 0 8%, yellow 8% 16%, black 16% 25%);
+ }
+ .repeat-conic:hover {
+    background-image: repeating-conic-gradient(yellow 0 8%, black 8% 16%, red 16% 25%);
+}
+
+.chart-gradient {
+    background-image: conic-gradient(cyan 0% 50%, magenta 50% 80%, yellow 80%);
+    border-radius: 50%;
+}
+
+.donut-gradient {
+    background-image: radial-gradient(white 40%, black 41%, transparent 42%), conic-gradient(rgb(115, 255, 0) 0% 50%, rgb(255, 68, 0) 50% 80%, yellow 80%);
+    border-radius: 50%;
+}
+
+/* filtros */
+
+.card {
+    width: 600px;
+    height: 400px;
+    border: medium solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;     
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 50%;
+}
+
+.filter {
+    filter: blur(1rem);
+    filter: blur(0.2rem);
+    filter: brightness(0.75);
+    filter: brightness(0.5);
+    filter: brightness(0.25);
+    filter: brightness(1.25);
+    filter: brightness(3);
+    filter:contrast(0);
+    filter:contrast(0.25);
+    filter:contrast(0.5);
+    filter:contrast(0.8);
+    filter:contrast(1.2);
+    filter:contrast(2);
+    filter: grayscale(0);
+    filter: grayscale(0.4);
+    filter: grayscale(0.8);
+    filter: grayscale(1);
+    filter:sepia(0);
+    filter:sepia(0.4);
+    filter:sepia(0.8);
+    filter:sepia(1);
+    filter:hue-rotate(0deg); /* rueda de colores */
+    filter:hue-rotate(30deg);
+    filter:hue-rotate(60deg);
+    filter:hue-rotate(90deg);
+    filter:hue-rotate(150deg);
+    filter:hue-rotate(240deg);
+    filter:hue-rotate(320deg);
+
+    filter: invert(0);
+    filter: invert(1);
+
+    filter: opacity(0);
+    filter: opacity(0.4);
+    filter: opacity(0.8);
+    filter: opacity(1);
+    filter: saturate(0);
+    filter: saturate(0.4);
+    filter: saturate(0.8);
+    filter: saturate(1.2);
+    filter: saturate(2);
+    filter: drop-shadow(1rem 1rem 1rem #7ddd7d);
+    filter: invert(1);
+
+}
+
+.filter-multiple {
+    filter: blur(0.1rem) hue-rotate(270deg) opacity(0.75) invert(1);
+}
+
+.relative {
+    position: relative;
+}
+
+.backdrop-filter, .backdrop-filter-multiple {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backdrop-filter h4 {
+    background-color: #00ffff40;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    backdrop-filter: grayscale(1);
+    backdrop-filter: sepia(1);
+    backdrop-filter: opacity(0.25);
+    backdrop-filter: hue-rotate(180deg);
+    backdrop-filter: blur(0.5rem);
+    
+}
+.backdrop-filter-multiple h4 {
+    background-color: #ff00ff40;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    backdrop-filter: blur(1rem) hue-rotate(90deg) invert(1) opacity(0.75);
+}
+
+
+/* dark mode */
+
+.dark-mode {
+    background-color: #fff;
+    color: #000;
+    filter: invert(1);
+}
+
+.dark-mode img {
+    filter: invert(1);
+}
+
+
+/* mezclas */
+
+.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.blend-modes img{
+    /* mix-blend-mode: normal;
+    mix-blend-mode: color;
+    mix-blend-mode: color-dodge;
+    mix-blend-mode: color-burn;
+    mix-blend-mode: screen;
+    mix-blend-mode: multiply;
+    mix-blend-mode: saturation;
+    mix-blend-mode: luminosity;
+    mix-blend-mode: hue;
+    mix-blend-mode: exclusion;
+    mix-blend-mode: hard-light;
+    mix-blend-mode: soft-light;
+    mix-blend-mode: soft-light;
+    mix-blend-mode: darken;
+     */mix-blend-mode: overlay;
+}
+
+.blend-modes-background {
+    background-image: url("../assets/puesta-sol.jpg"), url("../assets/cielo.png");
+    background-size:cover;
+    background-blend-mode: overlay;
+    background-blend-mode: darken;
+    background-blend-mode: multiply;
+    background-blend-mode: lighten;
+    /* las mismas propiedades de mix blend modes */
+}
+
+.clip-path {
+    /* clip-path: circle();
+    clip-path: circle(6rem);
+    clip-path: circle(6rem at top);
+    clip-path: circle(6rem at left);
+    clip-path: circle(6rem at left bottom);
+    clip-path: circle(6rem at right top);
+    clip-path: circle(6rem at 17% 55%);
+    clip-path: ellipse(10rem 6rem);
+    clip-path: ellipse(10rem 6rem at left);
+    clip-path: ellipse(10rem 6rem at left bottom);
+    clip-path: ellipse(10rem 6rem at center);
+    clip-path: ellipse(10rem 6rem at 30% 55%); */
+    clip-path: inset(3rem 4rem);
+    clip-path: inset(3rem 2rem 4rem 2rem);
+    clip-path: inset(2rem round 1rem 2rem); /* redondeo de imagenes */
+
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 30% 80%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+/*     https://bennettfeely.com/clippy/
+ */
+    
+}
+
+.shapes {
+    border: thick solid black;
+    padding: 1rem;
+    margin: 0 auto 5rem;
+    max-width: 800px;
+}
+
+.shapes p {
+    text-align: justify;
+}
+
+.shapes img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 50%;
+}
+
+.float-left {
+    float:left;
+}
+
+.float-right {
+    float:right;
+}
+
+.shape-1 {
+    margin: 4rem 2rem 4rem 0;
+    shape-outside: circle();
+    shape-outside: ellipse();
+    shape-outside: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    shape-outside: circle();
+
+
+}
+
+.shape-2 {
+    margin: 4rem 2rem;
+    shape-outside: circle();
+    shape-outside: ellipse();
+}
+
+.shape-3 {
+    margin: 4rem 4rem 4rem 1rem;
+    shape-outside: circle();
+    shape-outside: polygon(28% 0, 100% 0%, 66% 100%, 0% 100%);
+}

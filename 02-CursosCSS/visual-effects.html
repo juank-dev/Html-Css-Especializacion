@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--<html lang="es" class="dark-mode"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/visual-effects.css">
+    <title>EFECTOS VISUALES EN CSS</title>
+</head>
+
+<body>
+    <h1>EFECTOS VISUALES EN CSS</h1>
+    <hr>
+
+    <h2>Sombras</h2>
+    <div class="box box-shadow">
+        <p>TEXTO CON SOMBRAS</p>
+    </div>
+
+    <div class="box box-shadow-multiple">
+        <p>TEXTO CON SOMBRAS</p>
+    </div>
+
+    <div class="box box-drop-shadow">
+        <p>TEXTO CON SOMBRAS</p>
+    </div>
+
+    <div class="box box-drop-shadow">
+        <img src="./assets/arbol.png" alt="arbol">
+    </div>
+
+    <hr>
+
+    <h2>Degradados</h2>
+    <h3>Lineal</h3>
+    <div class="box lineal-gradient"></div>
+    <h3>Radial Gradient</h3>
+    <div class="box radial-gradient"></div>
+    <h3>Conico</h3>
+    <div class="box conic"></div>
+
+    <h2>Repetir degradados</h2>
+    <h3>Lineal</h3>
+    <div class="box repeat-lineal-gradient"></div>
+    <h3>Radial Gradient</h3>
+    <div class="box repeat-radial-gradient"></div>
+    <h3>Conico</h3>
+    <div class="box repeat-conic"></div>
+
+    <h2>Graficas degradados</h2>
+    <h3>chart gradient</h3>
+    <div class="box chart-gradient"></div>
+    <h3>Donut Gradient</h3>
+    <div class="box donut-gradient"></div>
+
+    <hr>
+    <h2>Filtros</h2>
+    <h3>filter</h3>
+    <article class="card">
+        <img src="./assets/puesta-sol.jpg" alt="sol" class="filter">
+    </article>
+    <h3>Multiple filter</h3>
+    <article class="card">
+        <img src="./assets/puesta-sol.jpg" alt="sol" class="filter-multiple">
+    </article>
+
+    <h3>Filtros a fondos</h3>
+    <article class="card relative">
+        <img src="./assets/puesta-sol.jpg" alt="sol">
+        <div class="backdrop-filter">
+            <h4>Puesta de sol</h4>
+        </div>
+    </article>
+    <h3>Filtros Multiples a fondos</h3>
+    <article class="card relative">
+        <img src="./assets/puesta-sol.jpg" alt="sol">
+        <div class="backdrop-filter-multiple">
+            <h4>Puesta de sol</h4>
+        </div>
+    </article>
+    <h3>Dark/Light Mode</h3>
+    <article class="card ">
+        <img src="./assets/puesta-sol.jpg" alt="sol">
+
+    </article>
+
+    <h2>Modos de Mezcla</h2>
+    <h3>Sobre Imagenes</h3>
+    <article class="card relative blend-modes">
+        <img src="./assets/puesta-sol.jpg" alt="sol">
+        <img src="./assets/arbol.png" alt="arbol" class="absolute">
+
+    </article>
+    <h3>Sobre Imagenes de fondo(background image)</h3>
+    <article class="card blend-modes-background">
+    </article>
+    <hr>
+    <h2>Mascaras</h2>
+    <article class="card clip-path">
+        <img src="./assets/puesta-sol.jpg" alt="sol">
+    </article>
+
+    <hr>
+
+    <h2>Formas</h2>
+    <article class="shapes">
+        <h3>Ejemplos de Formas y siluetas entre textos e imagenes</h3>
+        <img src="./assets/puesta-sol.jpg" alt="sol" class="float-left shape-1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda explicabo, incidunt aliquid eius in,
+            consequatur quas quo velit dolores nulla exercitationem laudantium vel itaque quibusdam! Cumque optio
+            aperiam quod quisquam.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem quod voluptas odit sed, tenetur praesentium!
+            Animi optio ad natus, et aliquam exercitationem nesciunt ipsa iste esse placeat veniam laborum recusandae.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam facilis nihil atque! Non voluptatem fuga
+            expedita dignissimos hic ipsa? Ipsum voluptatum unde nihil iste amet molestiae, ducimus error ipsa laborum!
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et aspernatur soluta non libero. Inventore amet
+            perferendis, quia vitae expedita, deleniti unde sed itaque veniam ad sapiente ducimus at nam! Impedit!</p>
+        <img src="./assets/puesta-sol.jpg" alt="sol" class="float-right shape-2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda explicabo, incidunt aliquid eius in,
+            consequatur quas quo velit dolores nulla exercitationem laudantium vel itaque quibusdam! Cumque optio
+            aperiam quod quisquam.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem quod voluptas odit sed, tenetur praesentium!
+            Animi optio ad natus, et aliquam exercitationem nesciunt ipsa iste esse placeat veniam laborum recusandae.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam facilis nihil atque! Non voluptatem fuga
+            expedita dignissimos hic ipsa? Ipsum voluptatum unde nihil iste amet molestiae, ducimus error ipsa laborum!
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et aspernatur soluta non libero. Inventore amet
+            perferendis, quia vitae expedita, deleniti unde sed itaque veniam ad sapiente ducimus at nam! Impedit!</p>
+        <img src="./assets/puesta-sol.jpg" alt="sol" class="float-left shape-3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda explicabo, incidunt aliquid eius in,
+            consequatur quas quo velit dolores nulla exercitationem laudantium vel itaque quibusdam! Cumque optio
+            aperiam quod quisquam.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem quod voluptas odit sed, tenetur praesentium!
+            Animi optio ad natus, et aliquam exercitationem nesciunt ipsa iste esse placeat veniam laborum recusandae.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam facilis nihil atque! Non voluptatem fuga
+            expedita dignissimos hic ipsa? Ipsum voluptatum unde nihil iste amet molestiae, ducimus error ipsa laborum!
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et aspernatur soluta non libero. Inventore amet
+            perferendis, quia vitae expedita, deleniti unde sed itaque veniam ad sapiente ducimus at nam! Impedit!</p>
+
+    </article>
+
+    <a href="index.html#temario-css">☝️</a>
+</body>
+
+</html>
