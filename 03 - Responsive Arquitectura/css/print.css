@@ -1,0 +1,10 @@
+@page {
+    size: A4;
+}
+
+body {
+    font-size: 12pt;
+    font-family:sans-serif;
+    background-color: rgb(109, 111, 235);
+    color: rgb(206, 72, 72);
+}
