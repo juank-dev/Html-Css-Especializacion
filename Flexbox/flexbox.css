@@ -1,0 +1,101 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+.container {
+    background-color: #333;
+    display:flex;
+    margin-bottom: 2rem;
+    height: 30vh;
+    
+    flex-direction:column-reverse;
+    flex-direction:column;
+    flex-direction:row;
+    flex-direction:row-reverse;
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    flex-flow: column wrap; /* short cut flex direction y flex wrap */
+    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    justify-content: center;
+    justify-content: flex-end;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: flex-start;
+    /* Define la alineación de los hijos en el eje transversal(cross axis) dentro de cada linea*/
+    align-items: flex-start;
+    align-items: baseline;
+    align-items: flex-end;
+    align-items: center;
+    align-items:stretch; /* default el hijo no puede tener alto o ancho*/
+    /* Define la alineación de los hijos en el eje transversal(cross axis) no funciona cuando
+    los hijos estan en una sola linea o wrap activado*/
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly;
+    align-content: stretch; /* align-items:stretch; no tener width o height */
+    align-content: flex-start; /* default */
+}
+
+.item {
+    background-color: rgb(180, 180, 180);
+    border: 1px solid red;
+    padding: 5px;
+    /* width:10%;
+    height: 20%; */
+    /* Cuando la caja flexbox tenga espacio sobrante es la habilidad o factor de crecer, valor por defecto es 0 No se aceptan valores negativos  */
+    flex-grow: 1;
+    flex-grow: 0;
+    /* Cuando la caja flexbox NO tenga espacio sobrante es la habilidad o factor de encogerse, valor por defecto es 1 No se aceptan valores negativos  */
+    flex-shrink: 1;
+    flex-shrink: 0; /* desactiva y no se encoge */
+    /* Es el tamaño del elemento hijo dentro de cada linea de la caja flexbox
+        Si la caja tiene direccion de fila, flex basis representa width
+        Si la caja tiene direccion de columna, flex basis representa height
+        Valor por defecto default
+        No confundir con width o height, tiene mayor especifidad
+    */
+    flex-basis: auto;
+    flex-basis: 100px;
+    /* flex es un shorthand de las propiedades flex-grow flex-shrink y flex basis, en ese orden */
+    flex: 0 1 auto; /* default */
+    /* Order: representan el orden que tendran los elementos hiojos en la caja flexbox
+        Valor por defecto 0
+        Ser aceptan valores positivos y negativos
+        Un valor menor siempre va primero
+    */
+    order: 0;
+    /* align self: sobreescribe las propoedades de aling-items solo para el elemento hijo especificado */
+    align-self: stretch;
+    
+}
+.item:nth-child(2) {
+    /* flex-grow: 3; */
+    flex-shrink: 2;
+    order: 1;
+    order: -1;
+}
+
+.item:nth-child(4) {
+    align-self: center;
+    align-self: flex-start;
+    align-self: flex-end;
+}
+
+/* .item:nth-child(2),.item:nth-child(17) {
+    padding: 1rem 0;
+}
+
+.item:nth-child(4),.item:nth-child(15) {
+    padding: 1rem 0 2rem 0; 
+} */

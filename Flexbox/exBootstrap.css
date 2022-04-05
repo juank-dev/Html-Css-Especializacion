@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+.container-own {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-item {
+    border: thin solid lightgray;
+    flex: 0 0 100%;
+}
+
+@media (min-width: 576px) {
+    .flex-item {
+        flex: 0 0 50%;
+    }   
+}
+@media (min-width: 768px) {
+    .flex-item {
+        flex: 0 0 33.33%;
+    }  
+}
+@media (min-width: 992px) {
+    .flex-item {
+        flex: 0 0 25%;
+    }  
+}
+@media (min-width: 1200px) {
+    .flex-item {
+        flex: 0 0 16.67%;
+    }  
+}

@@ -1,0 +1,118 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+.titulares {
+    padding: 1rem;
+    background-color: #222222;
+    color: #EEEEEE;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+/*     text-align:center; */
+}
+
+main {
+    flex-grow: 1;
+    
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu ul a:hover {
+    color: yellow;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-image {
+    background-image: url("https://placeimg.com/1280/720/animals");
+    color: white;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-image div {
+    background-color: #00000075;
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image h1 {
+    font-size: 6vw;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-responsive {
+    margin: 2rem 1rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-responsive-item {
+    flex: 1 1 200px;
+    border: thin solid #fac104;
+}
+@media screen and (min-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 1rem;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        
+    }
+    .flex-item {
+        flex-basis: 50%;
+    }
+
+    .flex-order-1 {
+        order: 1;
+    }
+
+    .flex-reverse {
+        flex-direction: row-reverse;
+    }
+}
